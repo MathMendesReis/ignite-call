@@ -7,8 +7,9 @@ export default function Home() {
   return (
     <CardPage>
       <section className=" w-full min-h-screen flex items-center justify-center">
-        <article className="my-auto w-[480px]">
-          <Text content="Agendamento descomplicado" className="text-6xl font-extrabold" />
+        <article className="my-auto  min-[480px]:w-[480px] w-full min-[1110px]:block flex items-center justify-center gap-2 flex-col text-center">
+          <Text content="Agendamento descomplicado"
+            className="min-[480px]:text-6xl text-3xl font-extrabold" />
           <Text
             content="Conecte seu calendário e permita que as pessoas marquem agendamentos no seu tempo livre."
             className="text-gray-100" />
@@ -19,7 +20,7 @@ export default function Home() {
             <TextButton content="Criar conta com Google" />
           </Button>
         </article>
-        <figure className="ml-auto">
+        <figure className="ml-auto min-[1111px]:block hidden">
           <Image src={'./image1.svg'} alt="" width={627} height={442} className="absolute right-0 top-[30%]" />
         </figure>
       </section>

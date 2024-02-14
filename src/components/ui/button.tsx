@@ -10,7 +10,7 @@ function Button({ children, className, ...rest }: ButtonProps) {
     return (
         <button
             {...rest}
-            className={`flex items-center justify-center gap-2 py-3 px-6 ${className} rounded-md hover:opacity-100 transition-all`}>
+            className={`flex items-center justify-center gap-2 py-3 px-6 ${className} rounded-md opacity-85  hover:opacity-100 transition-all`}>
             {children}
         </button>
     )
@@ -19,19 +19,23 @@ function Button({ children, className, ...rest }: ButtonProps) {
 interface IconProps {
     src: string
     alt?: string
+    className?: string
+
 
 }
-function Icon({ src, alt = '' }: IconProps) {
+function Icon({ src, alt = '', className }: IconProps) {
     return (
-        <Image src={src} alt={alt} width={16} height={16} />
+        <Image src={src} alt={alt} width={16} height={16} className={`${className}`} />
     )
 }
 interface TextButtonProps {
     content: string
+    className?: string
+
 }
-function TextButton({ content }: TextButtonProps) {
+function TextButton({ content, className = "text-gray-100" }: TextButtonProps) {
     return (
-        <span className="text-gray-100">{content}</span>
+        <span className={`${className}`}>{content}</span>
     )
 }
 

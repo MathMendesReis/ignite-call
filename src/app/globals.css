@@ -8,12 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-body {
-
-}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
+

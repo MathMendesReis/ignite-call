@@ -7,11 +7,11 @@ export function StepOne() {
         <>
             <div>
                 <Label content="Nome de usuário" id="name" className="text-gray-100 my-3" />
-                <Input type="text" name="name" id="name" placeholder="Joseph" />
+                <Input type="text" name="name" id="name" placeholder="Joseph" className="h-12" />
             </div>
             <div>
                 <Label content="Nome completo" id="name" className="text-gray-100 my-3" />
-                <Input type="text" name="name" id="name" placeholder="Joseph Oliveira" />
+                <Input type="text" name="name" id="name" placeholder="Joseph Oliveira" className="h-12" />
             </div>
 
         </>

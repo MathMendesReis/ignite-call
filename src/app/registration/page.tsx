@@ -1,7 +1,5 @@
 import FormWithStep from "@/components/steps/form-with-multistep";
-import { Header } from "@/components/steps/header";
 import { CardPage } from "@/components/ui/card-page";
-import { Text } from "@/components/ui/text";
 
 export default function Registration() {
 

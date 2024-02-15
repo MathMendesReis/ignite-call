@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { HtmlHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, HtmlHTMLAttributes } from "react";
 
-interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: React.ReactNode
     className?: string
 

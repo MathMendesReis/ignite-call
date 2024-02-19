@@ -1,8 +1,8 @@
 import { CardPage } from "@/components/ui/card-page";
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return <CardPage >{children}</CardPage>;
+  return <CardPage>{children}</CardPage>;
 }

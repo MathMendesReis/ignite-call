@@ -1,3 +1,4 @@
+import { CardPage } from "@/components/ui/card-page";
 import type { Metadata } from "next";
 
 
@@ -11,5 +12,5 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    return <body className={`bg-gray-900`}>{children}</body>;
+    return <CardPage >{children}</CardPage>;
 }

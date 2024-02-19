@@ -21,8 +21,8 @@ export default function Home() {
               pathname: '/registration',
               query: { step: "1" }
             }} className="" >
-              <Button className="bg-orange-500 min-w-80 my-2">
-                Login
+              <Button className="bg-[#DB4437] min-w-80 my-2">
+                <Text content="Login" />
               </Button>
             </Link>
           </div>

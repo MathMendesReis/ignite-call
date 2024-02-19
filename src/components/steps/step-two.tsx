@@ -1,5 +1,4 @@
 import { Label } from "../ui/label";
-import { Input } from "../ui/input";
 import { Button, Icon, TextButton } from "../ui/button";
 import { ArrowRight } from "../icons/ArrowRight";
 
@@ -13,7 +12,6 @@ export function StepTwo() {
                 >
                     <TextButton content="Conectar" className="text-[#00875F] font-extrabold" />
                     <ArrowRight className="text-[#00875F] w-4 h-4" />
-
                 </Button>
             </div>
         </>

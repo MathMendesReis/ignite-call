@@ -1,7 +1,8 @@
 import { getDaysOfWeek } from "@/util/getDaysOfWeek";
-import { Button } from "../ui/button";
-import { Input } from "../ui/input";
+import { Button, TextButton } from "../ui/button";
 import { Text } from "../ui/text";
+import { ArrowRight } from "../icons/ArrowRight";
+import Link from "next/link";
 
 
 export function StepThree() {
@@ -36,6 +37,17 @@ export function StepThree() {
                     })}
                 </ul>
             </div>
+            <Link href={{
+                pathname: '/registration',
+                query: { step: '4' }
+            }}>
+                <Button
+                    className="bg-gray-200 w-full"
+                >
+                    <TextButton content="Próximo passo" className="text-black flex items-center justify-center" />
+                    <ArrowRight className="text-black w-4 h-4" />
+                </Button>
+            </Link>
         </>
     )
 }

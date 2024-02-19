@@ -14,9 +14,6 @@ export type Schema = z.infer<typeof schema>
 
 export function useReactHookForm() {
     const router = useRouter()
-
-
-
     const methods = useForm<Schema>({
         resolver: zodResolver(schema),
     });

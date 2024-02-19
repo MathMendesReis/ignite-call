@@ -1,6 +1,7 @@
 import { Label } from "../ui/label";
-import { Button, Icon, TextButton } from "../ui/button";
+import { Button, TextButton } from "../ui/button";
 import { ArrowRight } from "../icons/ArrowRight";
+import Link from "next/link";
 
 export function StepTwo() {
     return (
@@ -14,6 +15,17 @@ export function StepTwo() {
                     <ArrowRight className="text-[#00875F] w-4 h-4" />
                 </Button>
             </div>
+            <Link href={{
+                pathname: '/registration',
+                query: { step: '3' }
+            }}>
+                <Button
+                    className="bg-gray-200 w-full"
+                >
+                    <TextButton content="Próximo passo" className="text-black flex items-center justify-center" />
+                    <ArrowRight className="text-black w-4 h-4" />
+                </Button>
+            </Link>
         </>
     )
 }
